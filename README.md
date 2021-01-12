@@ -1,6 +1,6 @@
 # Title
 
-Simple (or clever and funny?) description
+A chatbot for nerds.
 
 ## Table of Contents
 
@@ -12,7 +12,9 @@ Simple (or clever and funny?) description
 
 ## Background
 
-This is why this application exists.
+This chatbot is for people with too much time 
+on their hands and need someone to talk to.
+A great companion during a worldwide pandemic.
 
 ## Install
 
@@ -20,6 +22,6 @@ These are the steps to setup your local environment to run this application.
 
 ## Usage
 
-These are the steps to use the application or interact with it.
+Talk to the bot however you want to.
 
 ### Any optional sections
