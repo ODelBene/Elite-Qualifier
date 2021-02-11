@@ -1,5 +1,6 @@
 import random
-
+from bs4 import BeautifulSoup
+import requests
 #Simple chat program
 #Responds randomly with one of four preprogrammed responses
 
@@ -25,11 +26,16 @@ def hobbies(user_input):
 
 #def family(user_input):
 #  pass
+def weather(user_input):
+  weather_page=requests.get("https://weather.com/weather/today/l/d15df4c2c0efd911595f6df096c22c42ae65e3666f3eb406d7a15adcfef60a07")
+  soup= BeautifulSoup(weather_page.content,'html.parser')
+
+
 
 def food(user_input):
   user["food"]=input("What is your favorite food?\n") 
   generic_response(user_input)
-  cook=input("Do you prefer to cook your own food or go to a restaurant?\n")
+  cook=input("Do you prefer to cook your own food or go to a restaurant?\n") 
   if "cook" in cook.capitalize():
     pass
   elif "restaurant" in cook.capitalize():
